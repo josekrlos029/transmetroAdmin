@@ -123,7 +123,7 @@ class estacion extends Modelo{
        
         }
         
-    public function leerEstacion() {
+    public function leerEstaciones() {
         $sql = "SELECT idEstacion, nombre, descripcion, lat, lon, portal FROM estacion";
         $this->__setSql($sql);
         $resultado = $this->consultar($sql);
