@@ -21,7 +21,7 @@ class AdministradorControl extends Controlador{
             $estaciones = $estacion->leerEstaciones();
             $arr= array();
             foreach($estaciones as $est){
-                $arr[] = array('id'=>$estacion->getIdEstacion(),
+                $arr[] = array('id'=>$est->getIdEstacion(),
                         'descripcion'=>$est->getDescripcion(),
                         'nombre'=>$est->getNombre(),
                         'lat'=>$est->getLat(),
